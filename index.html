@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main>
       <div class="app-wrapper">
-        <div class="menu-area"></div>
+        <div class="menu-area">
+          <h1 class="header">Tic-Tac-Toe</h1>
+        </div>
         <div class="game-area">
+          <div id="message" data-message="">Hello there</div>
+
           <div class="gameboard">
-            <button class="square tr lc" type="button"></button>
-            <button class="square tr" type="button"></button>
-            <button class="square tr rc" type="button"></button>
-            <button class="square lc" type="button"></button>
-            <button class="square" type="button"></button>
-            <button class="square rc" type="button"></button>
-            <button class="square lc br" type="button"></button>
-            <button class="square br" type="button"></button>
-            <button class="square br rc" type="button"></button>
+            <button class="square" data-index="0" type="button"></button>
+            <button class="square" data-index="1" type="button"></button>
+            <button class="square" data-index="2" type="button"></button>
+            <button class="square" data-index="3" type="button"></button>
+            <button class="square" data-index="4" type="button"></button>
+            <button class="square" data-index="5" type="button"></button>
+            <button class="square" data-index="6" type="button"></button>
+            <button class="square" data-index="7" type="button"></button>
+            <button class="square" data-index="8" type="button"></button>
           </div>
         </div>
-        <div class="reset-area"></div>
+        <div class="reset-area" data-reset="">Restart</div>
       </div>
     </main>
-    <script src="./script.js"></script>
   </body>
 </html>

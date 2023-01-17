@@ -78,6 +78,11 @@ h6 {
 }
 
 /* My Own Styles */
+
+:root {
+  font-family: "Varela Round", sans-serif;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -89,7 +94,7 @@ main {
   grid-template-rows: 2fr 6fr 1fr;
   height: 600px;
   width: 1200px;
-  background-color: beige;
+  background-color: hsl(0, 0%, 94%);
   border: 1px solid black;
   border-radius: 4px;
   margin-top: 16px;
@@ -97,12 +102,19 @@ main {
 
 .menu-area {
   background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .game-area {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .gameboard {
@@ -116,25 +128,32 @@ main {
 
 .reset-area {
   background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.reset-area:hover {
+  background-color: lightcoral;
 }
 
 /* top row, bottom row, right column, left column buttons */
-.tr {
-  border-top: none;
-}
-
-.br {
-  border-bottom: none;
-}
-
-.rc {
-  border-right: none;
-}
-
-.lc {
-  border-left: none;
-}
 
 .square {
   border: none;
+  line-height: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: hsl(0, 0%, 84%);
+}
+
+#message {
+  font-size: 2rem;
 }
